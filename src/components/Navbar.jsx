@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
+import logo from "../assets/logo.svg"
 
 
 
@@ -26,7 +27,7 @@ const Navbar = () => {
                         window.scrollTo(0, 0);
                     }}
                 >
-                    <img src={"/logo.svg"} alt="logo" className="w-9 h-9 object-contain" />
+                    <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
                     <p className="text-white text-[20px] font-semibold cursor-pointer flex ">
                         Aman &nbsp;
                         <span className='sm:block hidden'> | Web
